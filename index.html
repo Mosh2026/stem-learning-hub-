@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STEM Learning Hub | Math & Science Excellence</title>
+    <meta name="description" content="A modern educational hub for Math and Science students in grades 6-12.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container header-container">
+            <a href="#home" class="logo">
+                <div class="logo-icon"><i class="fas fa-atom"></i></div>
+                <div class="logo-text">
+                    <span class="hub-title">STEM</span>
+                    <span class="hub-subtitle">Learning Hub</span>
+                </div>
+            </a>
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#math">Math</a></li>
+                    <li><a href="#science">Science</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                    <li><a href="#assignments">Assignments</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li class="nav-cta"><a href="#contact" class="btn btn-sm btn-primary">Contact</a></li>
+                </ul>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span></span><span></span><span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-wrapper">
+                <div class="hero-content" data-aos="fade-right">
+                    <span class="badge">Your Path to Mastery</span>
+                    <h1>Empowering Minds Through <span>STEM</span> Excellence</h1>
+                    <p>Comprehensive Math and Science curriculum for grades 6-12. Interactive resources, hands-on experiments, and expert guidance.</p>
+                    <div class="hero-btns">
+                        <a href="#math" class="btn btn-lg btn-primary">Explore Math <i class="fas fa-chevron-right"></i></a>
+                        <a href="#science" class="btn btn-lg btn-outline">Explore Science</a>
+                    </div>
+                </div>
+                <div class="hero-image" data-aos="fade-left">
+                    <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&q=80&w=800" alt="STEM Education" class="main-img" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="math" class="section-curriculum bg-light">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Mathematics</span>
+                <h2>Curriculum & Practice</h2>
+            </div>
+            <div class="curriculum-container" data-aos="fade-up">
+                <div class="curriculum-tabs">
+                    <button class="tab-link active" onclick="openTab(event, 'math-g6')">Grade 6</button>
+                    <button class="tab-link" onclick="openTab(event, 'math-g7')">Grade 7</button>
+                    <button class="tab-link" onclick="openTab(event, 'math-g8')">Grade 8</button>
+                    <button class="tab-link" onclick="openTab(event, 'math-g9')">Grade 9</button>
+                    <button class="tab-link" onclick="openTab(event, 'math-g10')">Grades 10-12</button>
+                </div>
+                <div id="math-g6" class="tab-content active">
+                    <div class="curriculum-flex">
+                        <div class="curriculum-info">
+                            <h3>Grade 6: Fractions & Decimals</h3>
+                            <p>Master parts of a whole and arithmetic operations.</p>
+                            <ul class="curriculum-list">
+                                <li><i class="fas fa-check-circle"></i> Multiplying/Dividing Fractions</li>
+                                <li><i class="fas fa-check-circle"></i> Ratios and Unit Rates</li>
+                            </ul>
+                            <div class="exercises">
+                                <h4>Practice:</h4>
+                                <ol>
+                                    <li>1/2 + 1/4 = ?</li>
+                                    <li>Convert 0.75 to fraction.</li>
+                                    <li>60 miles in 2 hours = ? mph</li>
+                                </ol>
+                            </div>
+                            <div class="curriculum-actions">
+                                <a href="https://www.khanacademy.org/math/cc-sixth-grade-math" target="_blank" rel="noopener" class="btn btn-sm btn-primary">Khan Academy</a>
+                            </div>
+                        </div>
+                        <div class="curriculum-preview"><i class="fas fa-divide"></i></div>
+                    </div>
+                </div>
+                <div id="math-g7" class="tab-content">
+                    <div class="curriculum-flex">
+                        <div class="curriculum-info">
+                            <h3>Grade 7: Ratios & Proportions</h3>
+                            <p>Explore unit rates, percentages, and basic geometry.</p>
+                            <div class="exercises">
+                                <h4>Practice:</h4>
+                                <ol>
+                                    <li>Solve: 3/5 = x/20</li>
+                                    <li>15% of $80 = ?</li>
+                                    <li>Circumference (r=7cm) = ?</li>
+                                </ol>
+                            </div>
+                            <a href="https://www.khanacademy.org/math/cc-seventh-grade-math" target="_blank" rel="noopener" class="btn btn-sm btn-primary">Learn More</a>
+                        </div>
+                        <div class="curriculum-preview"><i class="fas fa-percentage"></i></div>
+                    </div>
+                </div>
+                <div id="math-g8" class="tab-content">
+                    <div class="curriculum-flex">
+                        <div class="curriculum-info">
+                            <h3>Grade 8: Linear Equations</h3>
+                            <p>Understand functions, slope, and the Pythagorean theorem.</p>
+                            <div class="exercises">
+                                <h4>Practice:</h4>
+                                <ol>
+                                    <li>Solve: 2x + 5 = 15</li>
+                                    <li>Hypotenuse (legs 3cm, 4cm) = ?</li>
+                                    <li>Slope of y = 4x - 2?</li>
+                                </ol>
+                            </div>
+                            <a href="https://www.khanacademy.org/math/cc-eighth-grade-math" target="_blank" rel="noopener" class="btn btn-sm btn-primary">Explore Now</a>
+                        </div>
+                        <div class="curriculum-preview"><i class="fas fa-chart-line"></i></div>
+                    </div>
+                </div>
+                <div id="math-g9" class="tab-content">
+                    <div class="curriculum-flex">
+                        <div class="curriculum-info">
+                            <h3>Grade 9: Algebra I</h3>
+                            <p>Polynomials, factoring, and quadratic functions.</p>
+                            <div class="exercises">
+                                <h4>Practice:</h4>
+                                <ol>
+                                    <li>Factor: x² + 5x + 6</li>
+                                    <li>Solve: x+y=10, x-y=2</li>
+                                    <li>Vertex of y=(x-3)²+4?</li>
+                                </ol>
+                            </div>
+                            <a href="https://www.khanacademy.org/math/algebra" target="_blank" rel="noopener" class="btn btn-sm btn-primary">Algebra I</a>
+                        </div>
+                        <div class="curriculum-preview"><i class="fas fa-superscript"></i></div>
+                    </div>
+                </div>
+                <div id="math-g10" class="tab-content">
+                    <div class="curriculum-flex">
+                        <div class="curriculum-info">
+                            <h3>Grades 10-12: Trig & Calculus</h3>
+                            <p>Advanced functions, limits, and derivatives.</p>
+                            <div class="exercises">
+                                <h4>Practice:</h4>
+                                <ol>
+                                    <li>sin(θ)=3/5, cos(θ)=?</li>
+                                    <li>f'(x) of f(x)=x²?</li>
+                                    <li>Solve: 2sin(x)=1</li>
+                                </ol>
+                            </div>
+                            <a href="https://www.khanacademy.org/math/calculus-1" target="_blank" rel="noopener" class="btn btn-sm btn-primary">Calculus</a>
+                        </div>
+                        <div class="curriculum-preview"><i class="fas fa-wave-square"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="science" class="section-curriculum">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag science">Science</span>
+                <h2>Science Explorations</h2>
+            </div>
+            <div class="curriculum-container" data-aos="fade-up">
+                <div class="curriculum-tabs science-tabs">
+                    <button class="tab-link active" onclick="openTab(event, 'sci-g6')">Grade 6</button>
+                    <button class="tab-link" onclick="openTab(event, 'sci-g7')">Grade 7</button>
+                    <button class="tab-link" onclick="openTab(event, 'sci-g8')">Grade 8</button>
+                    <button class="tab-link" onclick="openTab(event, 'sci-g9')">Grade 9</button>
+                    <button class="tab-link" onclick="openTab(event, 'sci-g10')">Grades 10-12</button>
+                </div>
+                <div id="sci-g6" class="tab-content active">
+                    <div class="curriculum-flex">
+                        <div class="curriculum-info">
+                            <h3>Grade 6: Ecosystems</h3>
+                            <p>Explore food chains and environmental cycles.</p>
+                            <div class="experiment">
+                                <h4>Experiment: Rain in a Jar</h4>
+                                <p>Use hot water and ice to create condensation.</p>
+                            </div>
+                            <a href="https://www.youtube.com/watch?v=bW7PlTaawfQ" target="_blank" rel="noopener" class="btn btn-sm btn-secondary"><i class="fab fa-youtube"></i> Video</a>
+                        </div>
+                        <div class="curriculum-preview sci-preview"><i class="fas fa-seedling"></i></div>
+                    </div>
+                </div>
+                <div id="sci-g7" class="tab-content">
+                    <div class="curriculum-flex">
+                        <div class="curriculum-info">
+                            <h3>Grade 7: Cell Biology</h3>
+                            <p>Learn the building blocks of life.</p>
+                            <div class="experiment">
+                                <h4>Activity: Onion Cells</h4>
+                                <p>Observe cell walls under magnification.</p>
+                            </div>
+                            <a href="https://www.youtube.com/watch?v=URUJD5NEXC8" target="_blank" rel="noopener" class="btn btn-sm btn-secondary"><i class="fab fa-youtube"></i> Video</a>
+                        </div>
+                        <div class="curriculum-preview sci-preview"><i class="fas fa-bacteria"></i></div>
+                    </div>
+                </div>
+                <div id="sci-g8" class="tab-content">
+                    <div class="curriculum-flex">
+                        <div class="curriculum-info">
+                            <h3>Grade 8: Forces & Motion</h3>
+                            <p>Newton's Laws, gravity, and acceleration.</p>
+                            <div class="experiment">
+                                <h4>Experiment: Balloon Rocket</h4>
+                                <p>Demonstrate action and reaction.</p>
+                            </div>
+                            <a href="https://www.youtube.com/watch?v=kKKM8Y-u7ds" target="_blank" rel="noopener" class="btn btn-sm btn-secondary"><i class="fab fa-youtube"></i> Video</a>
+                        </div>
+                        <div class="curriculum-preview sci-preview"><i class="fas fa-rocket"></i></div>
+                    </div>
+                </div>
+                <div id="sci-g9" class="tab-content">
+                    <div class="curriculum-flex">
+                        <div class="curriculum-info">
+                            <h3>Grade 9: Chemistry</h3>
+                            <p>Atoms, reactions, and the pH scale.</p>
+                            <div class="experiment">
+                                <h4>Experiment: Vinegar Volcano</h4>
+                                <p>Witness a classic chemical reaction.</p>
+                            </div>
+                            <a href="https://www.youtube.com/watch?v=L_To6n0-T-M" target="_blank" rel="noopener" class="btn btn-sm btn-secondary"><i class="fab fa-youtube"></i> Video</a>
+                        </div>
+                        <div class="curriculum-preview sci-preview"><i class="fas fa-vials"></i></div>
+                    </div>
+                </div>
+                <div id="sci-g10" class="tab-content">
+                    <div class="curriculum-flex">
+                        <div class="curriculum-info">
+                            <h3>Grades 10-12: Energy</h3>
+                            <p>Thermodynamics and heat transfer.</p>
+                            <div class="experiment">
+                                <h4>Project: Solar Oven</h4>
+                                <p>Harness solar energy for cooking.</p>
+                            </div>
+                            <a href="https://www.youtube.com/watch?v=42S8p9ZpI-0" target="_blank" rel="noopener" class="btn btn-sm btn-secondary"><i class="fab fa-youtube"></i> Video</a>
+                        </div>
+                        <div class="curriculum-preview sci-preview"><i class="fas fa-sun"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="resources" class="resources-section bg-light">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Learning Tools</h2>
+            </div>
+            <div class="resource-grid">
+                <div class="resource-card" data-aos="flip-left">
+                    <i class="fas fa-graduation-cap res-icon"></i>
+                    <h4>Khan Academy</h4>
+                    <a href="https://www.khanacademy.org" target="_blank" rel="noopener">Visit Site</a>
+                </div>
+                <div class="resource-card" data-aos="flip-left" data-aos-delay="100">
+                    <i class="fas fa-vial res-icon"></i>
+                    <h4>PhET Sims</h4>
+                    <a href="https://phet.colorado.edu" target="_blank" rel="noopener">Explore</a>
+                </div>
+                <div class="resource-card" data-aos="flip-left" data-aos-delay="200">
+                    <i class="fab fa-youtube res-icon"></i>
+                    <h4>Crash Course</h4>
+                    <a href="https://www.youtube.com/user/crashcourse" target="_blank" rel="noopener">Watch</a>
+                </div>
+                <div class="resource-card" data-aos="flip-left" data-aos-delay="300">
+                    <i class="fas fa-calculator res-icon"></i>
+                    <h4>Desmos</h4>
+                    <a href="https://www.desmos.com/calculator" target="_blank" rel="noopener">Grapher</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="assignments" class="assignments-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Assignments</h2>
+            </div>
+            <div class="table-responsive" data-aos="fade-up">
+                <table class="assignment-table">
+                    <thead>
+                        <tr><th>Grade</th><th>Subject</th><th>Topic</th><th>Due Date</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Grade 8</td><td>Math</td><td>Linear Systems</td><td>May 20</td></tr>
+                        <tr><td>Grade 10</td><td>Science</td><td>Thermodynamics</td><td>May 22</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section bg-light">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-img" data-aos="fade-right">
+                    <img src="https://images.unsplash.com/photo-1544717297-fa154da09f5b?auto=format&fit=crop&q=80&w=600" alt="Teacher Profile" loading="lazy">
+                </div>
+                <div class="about-content" data-aos="fade-left">
+                    <span class="section-tag">Meet Alex</span>
+                    <h2>Dedicated to STEM</h2>
+                    <p>Educator with 12+ years of experience in Math and Science.</p>
+                    <div class="social-mini">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-card" data-aos="zoom-in">
+                <div class="contact-info">
+                    <h2>Get in Touch</h2>
+                    <ul class="contact-list">
+                        <li><i class="fas fa-envelope"></i> alex@stemhub.edu</li>
+                        <li><i class="fas fa-clock"></i> Mon-Fri (3-4 PM)</li>
+                    </ul>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form id="contact-form">
+                        <div class="form-row">
+                            <input type="text" placeholder="Name" required>
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                        <textarea placeholder="Message" rows="4" required></textarea>
+                        <button type="submit" class="btn btn-primary btn-block">Send <i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo"><i class="fas fa-atom"></i> STEM Hub</a>
+                    <p>Empowering the next generation since 2014.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#math">Math</a></li>
+                        <li><a href="#science">Science</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 STEM Learning Hub.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
